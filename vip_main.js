@@ -330,7 +330,7 @@ function receive_events(data)
 
 			if (event.allDay){
 				console.log(event.color);
-				if(vip.events.colourfilter.on && (vip.events.colourfilter.colours.indexOf(event.colour) > -1)){
+				if(vip.events.colourfilter.on && (vip.events.colourfilter.colours.indexOf(event.color) > -1)){
 					add_all_day_event(event);
 				}				
 			}
