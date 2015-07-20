@@ -38,9 +38,9 @@
 <button type="button" title="Single-column View" onclick="toggle_single_col();"><b>|</b></button>
 <button id="btnSettings" type="button" title="Settings" onclick="show_view('settings');"><b>*</b></button>
 </center>
-<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_analytics.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_lib.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_main.js"></script>
+<script type="text/javascript" src="https://aogriffiths.github.io/visual-planner/vip_analytics.js"></script>
+<script type="text/javascript" src="https://aogriffiths.github.io/visual-planner/vip_lib.js"></script>
+<script type="text/javascript" src="https://aogriffiths.github.io/visual-planner/vip_main.js"></script>
 ]]>
 </Content>
 <Content type="html" view="canvas">
@@ -178,9 +178,9 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_analytics.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_lib.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_main.js"></script>
+<script type="text/javascript" src="https://aogriffiths.github.io/visual-planner/vip_analytics.js"></script>
+<script type="text/javascript" src="https://aogriffiths.github.io/visual-planner/vip_lib.js"></script>
+<script type="text/javascript" src="https://aogriffiths.github.io/visual-planner/vip_main.js"></script>
 ]]>
 </Content>
 </Module>
