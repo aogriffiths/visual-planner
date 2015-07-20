@@ -328,8 +328,13 @@ function receive_events(data)
 			if (cal_data.name)
 				event.calendar = cal_data.name;
 
-			if (event.allDay)
-				add_all_day_event(event);
+			if (event.allDay){
+				console.log(event.colour);
+				if(vip.events.colourfilter.on && (vip.events.colourfilter.colours.indexOf(event.colour) > -1)){
+					add_all_day_event(event);
+				}				
+			}
+			
 			else
 				add_timed_event(event);
 		}
