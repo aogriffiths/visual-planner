@@ -329,7 +329,7 @@ function receive_events(data)
 				event.calendar = cal_data.name;
 
 			if (event.allDay){
-				console.log(event.colour);
+				console.log(event.color);
 				if(vip.events.colourfilter.on && (vip.events.colourfilter.colours.indexOf(event.colour) > -1)){
 					add_all_day_event(event);
 				}				
