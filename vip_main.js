@@ -17,7 +17,8 @@ var vip = {
 		proportional: {show: false, start_hour:8, end_hour:20},
 		title: {show: false, time: false, colour: false, hide_marker: false},
 		timed: {show: true, multi_day_as_all_day: false, size: 8},
-		allday: {show: true, one_day_as_timed: true, multi_day_as_timed: false, width: 3}
+		allday: {show: true, one_day_as_timed: true, multi_day_as_timed: false, width: 3},
+		colourfilter: {on: true, colours: ""}
 	},
 	selection: {start: null, end: null},
 	event_req: {queue: [], pending: false}
@@ -44,6 +45,10 @@ function VipInit()
 	vip.events.allday.show = prefs.getBool("show_all_day_evts");
 	vip.events.allday.one_day_as_timed = prefs.getBool("one_day_as_timed");
 	vip.events.allday.multi_day_as_timed = prefs.getBool("multi_day_as_timed");
+
+	vip.events.colourfilter.on = prefs.getBool("colourfilter_on");
+	vip.events.colourfilter.colours = prefs.getString("colourfilter_colours");
+	
 	vip.events.timed.show = prefs.getBool("show_timed_evts");
 	vip.events.timed.multi_day_as_all_day = prefs.getBool("multi_day_as_all_day");
 	vip.events.allday.width = prefs.getInt("all_day_evt_width");
@@ -139,6 +144,10 @@ function InitSettingsView()
 	document.getElementById("show_all_day_evts").checked = prefs.getBool("show_all_day_evts");
 	document.getElementById("one_day_as_timed").checked = prefs.getBool("one_day_as_timed");
 	document.getElementById("multi_day_as_timed").checked = prefs.getBool("multi_day_as_timed");
+
+	document.getElementById("filter_coloured_evts").checked = prefs.getBool("colourfilter_on");
+	document.getElementById("colour_filters").value  = prefs.getString("colourfilter_colours");
+	
 	document.getElementById("show_timed_evts").checked = prefs.getBool("show_timed_evts");
 	document.getElementById("multi_day_as_all_day").checked = prefs.getBool("multi_day_as_all_day");
 	document.getElementById("all_day_evt_width").value = prefs.getInt("all_day_evt_width");
@@ -430,6 +439,10 @@ function onSaveSettings()
 	prefs.set("show_all_day_evts", setdoc.getElementById("show_all_day_evts").checked.toString());
 	prefs.set("one_day_as_timed", setdoc.getElementById("one_day_as_timed").checked.toString());
 	prefs.set("multi_day_as_timed", setdoc.getElementById("multi_day_as_timed").checked.toString());
+	
+	prefs.set("colourfilter_on", setdoc.getElementById("filter_coloured_evts").checked.toString());
+	prefs.set("colourfilter_colours", setdoc.getElementById("colour_filters").value);
+	
 	prefs.set("show_timed_evts", setdoc.getElementById("show_timed_evts").checked.toString());
 	prefs.set("multi_day_as_all_day", setdoc.getElementById("multi_day_as_all_day").checked.toString());
 	prefs.set("all_day_evt_width", setdoc.getElementById("all_day_evt_width").value);
