@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="visual-planner" description="Visual Planner for Google Calendar" author="Chris Thompson">
+<ModulePrefs title="visual-planner" description="Visual Planner for Google Calendar" author="Adam Griffiths / Chris Thompson">
 <Require feature="google.calendar-0.5.read"/>
 <Require feature="views"/>
 <Require feature="settitle"/>
@@ -25,6 +25,9 @@
 <UserPref name="show_all_day_evts" datatype="bool" default_value="true"/>
 <UserPref name="one_day_as_timed" datatype="bool" default_value="true"/>
 <UserPref name="multi_day_as_timed" datatype="bool" default_value="false"/>
+<UserPref name="colourfilter_on" datatype="bool" default_value="false"/>
+<UserPref name="colourfilter_colours" datatype="string" default_value="#000000"/>
+
 <UserPref name="show_timed_evts" datatype="bool" default_value="true"/>
 <UserPref name="multi_day_as_all_day" datatype="bool" default_value="false"/>
 <UserPref name="all_day_evt_width" datatype="int" default_value="3"/>
@@ -35,9 +38,9 @@
 <button type="button" title="Single-column View" onclick="toggle_single_col();"><b>|</b></button>
 <button id="btnSettings" type="button" title="Settings" onclick="show_view('settings');"><b>*</b></button>
 </center>
-<script type="text/javascript" src="https://ctcode.github.io/visual-planner/vip_analytics.js"></script>
-<script type="text/javascript" src="https://ctcode.github.io/visual-planner/vip_lib.js"></script>
-<script type="text/javascript" src="https://ctcode.github.io/visual-planner/vip_main.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_analytics.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_lib.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_main.js"></script>
 ]]>
 </Content>
 <Content type="html" view="canvas">
@@ -175,9 +178,9 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="https://ctcode.github.io/visual-planner/vip_analytics.js"></script>
-<script type="text/javascript" src="https://ctcode.github.io/visual-planner/vip_lib.js"></script>
-<script type="text/javascript" src="https://ctcode.github.io/visual-planner/vip_main.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_analytics.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_lib.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/aogriffiths/visual-planner/gh-pages/vip_main.js"></script>
 ]]>
 </Content>
 </Module>
